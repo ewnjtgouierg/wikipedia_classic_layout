@@ -1,0 +1,110 @@
+/*************** classic layout before the recent upgrade ****************/
+.mw-body
+	{
+		padding: 0 !important;
+	}
+
+/* blank site notice creates extra margin */
+#siteNotice:empty
+	{
+		display: none;
+	}
+
+/* - huge global left margin */
+.vector-feature-zebra-design-disabled .vector-header-container,
+.vector-feature-zebra-design-disabled .mw-page-container
+	{
+    	padding: 0 10px;
+	}
+
+/* - too big fixed width left column */
+.mw-page-container-inner
+	{
+		grid-template-columns: min-content 1fr;
+		grid-gap: 10px;
+	}
+
+/* - Languages and contents/index menu fixed height and scrolling */
+#vector-toc,
+.vector-page-titlebar .mw-portlet-lang > .vector-menu-content
+	{
+		max-height: initial !important;
+	}
+.vector-menu-content-list
+	{
+		list-style: none;
+	}
+
+/* - extra languages margins / padding */
+
+.vector-menu-content-list
+	{
+		margin-left: 0;
+	}
+.vector-feature-zebra-design-disabled .vector-pinnable-element .mw-list-item a, .vector-feature-zebra-design-disabled .vector-dropdown-content .mw-list-item a
+	{
+		padding: 0 0 10px 0;
+	}
+
+/* contents (index) block */
+
+	/* - "Top" link */
+	#mw-panel-toc li:first-of-type
+		{
+			display: none;
+		}
+
+#vector-toc-pinned-container
+	{
+		margin-top: 0 !important;
+	}
+#vector-toc
+	{
+		padding: 0 0 10px !important;
+	}
+#mw-panel-toc ul,
+#mw-panel-toc li
+	{
+		list-style: decimal;
+	}
+#vector-toc ul
+	{
+		padding-left: 2em !important;
+	}
+#mw-panel-toc
+	{
+		margin-top: 15px;
+	}
+#vector-toc li
+	{
+		display: list-item !important;
+		font-size: 15px !important;
+	}
+#vector-toc::after
+	{
+		display: none !important;
+	}
+#vector-toc .vector-pinnable-header
+	{
+		border-bottom: none;
+		text-align: center;
+	}
+#mw-panel-toc h2
+	{
+		font-family: sans-serif;
+		font-weight: 700;
+		color: black;
+	}
+#mw-panel-toc
+	{
+		line-height: 15px;
+		color: black;
+		margin-left: 0 !important;
+	    background: #f8f9fa !important;
+	    padding: 0 10px;
+	    border: 1px solid #a2a9b1;
+	}
+#vector-toc
+	{
+	    background: none !important;
+	}
